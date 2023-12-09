@@ -126,9 +126,9 @@ export default async function IndexPage() {
         </React.Suspense>
         <Balancer
           as="h1"
-          className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl"
+          className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl bg-gradient-to-tr from-zinc-400/10 via-white/80 to-white/20 bg-clip-text text-transparent"
         >
-          Zaf - A Right Place to find your biomed gears
+         <span className="bg-gradient-to-tr from-zinc-400/10 via-white/80 to-white/20 bg-clip-text text-transparent">Zaf</span> - A Right Place to find your biomed gears
         </Balancer>
         <Balancer className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
           Buy and sell skateboarding gears from independent brands and stores
