@@ -75,11 +75,11 @@ export function MainNav({ items }: MainNavProps) {
             .map((item) =>
               item?.items ? (
                 <NavigationMenuItem key={item.title}>
-                  <NavigationMenuTrigger className="h-auto capitalize">
+                  <NavigationMenuTrigger className="bg-transparent h-auto capitalize ">
                     {item.title}
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+                    <ul className="grid w-[400px] gap-3 bg-gradient-to-tr p-4 dark:from-transparent  dark:via-transparent dark:to-transparent md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                       {item.items.map((item) => (
                         <ListItem
                           key={item.title}
