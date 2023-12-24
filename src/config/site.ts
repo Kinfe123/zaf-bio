@@ -30,18 +30,18 @@ export const siteConfig = {
           description: "All the products we have to offer.",
           items: [],
         },
-        {
-          title: "Build a Board",
-          href: "/build-a-board",
-          description: "Build your own custom skateboard.",
-          items: [],
-        },
-        {
-          title: "Blog",
-          href: "/blog",
-          description: "Read our latest blog posts.",
-          items: [],
-        },
+        // {
+        //   title: "Build a Board",
+        //   href: "/build-a-board",
+        //   description: "Build your own custom skateboard.",
+        //   items: [],
+        // },
+        // {
+        //   title: "Blog",
+        //   href: "/blog",
+        //   description: "Read our latest blog posts.",
+        //   items: [],
+        // },
       ],
     },
     ...productCategories.map((category) => ({
