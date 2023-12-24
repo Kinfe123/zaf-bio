@@ -24,7 +24,7 @@ export const sortOptions = [
 
 export const productCategories = [
   {
-    title: "skateboards",
+    title: "Microscopes",
     image: "/images/skateboard-one.webp",
     icon: Icons.logo,
     subcategories: [
@@ -73,7 +73,7 @@ export const productCategories = [
     ],
   },
   {
-    title: "clothing",
+    title: "Anesthesia Machine",
     image: "/images/clothing-one.webp",
     icon: Icons.shirt,
     subcategories: [
@@ -105,7 +105,7 @@ export const productCategories = [
     ],
   },
   {
-    title: "shoes",
+    title: "Defibilators",
     image: "/images/shoe-one.webp",
     icon: Icons.footprints,
     subcategories: [
