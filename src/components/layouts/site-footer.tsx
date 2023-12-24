@@ -70,14 +70,14 @@ export function SiteFooter() {
           className="flex items-center space-x-4"
         >
           <div className="flex-1 text-left text-sm leading-loose text-muted-foreground">
-            Built by{" "}
+            
             <Link
-              href="https://twitter.com/sadmann17"
+              href="https://twitter.com/KinfishT"
               target="_blank"
               rel="noreferrer"
               className="font-semibold transition-colors hover:text-foreground"
             >
-              Sadman
+          KiNFiSH{" "}
               <span className="sr-only">Twitter</span>
             </Link>
             .

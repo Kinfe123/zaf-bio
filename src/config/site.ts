@@ -14,10 +14,10 @@ const links = {
 }
 
 export const siteConfig = {
-  name: "Skateshop",
+  name: "Zaf-Pharmacy",
   description:
-    "An open source e-commerce skateshop build with everything new in Next.js.",
-  url: "https://skateshop.sadmn.com",
+    "A place for you to buy biomed gears at a fair and appealing cost for you to elevate your med experience.",
+  url: "https://zaf-bio.vercel.app",
   ogImage: "https://skateshop.sadmn.com/opengraph-image.png",
   links,
   mainNav: [
@@ -64,37 +64,37 @@ export const siteConfig = {
   ] satisfies MainNavItem[],
   footerNav: [
     {
-      title: "Credits",
+      title: "",
       items: [
-        {
-          title: "OneStopShop",
-          href: "https://onestopshop.jackblatch.com",
-          external: true,
-        },
-        {
-          title: "Acme Corp",
-          href: "https://acme-corp.jumr.dev",
-          external: true,
-        },
-        {
-          title: "craft.mxkaske.dev",
-          href: "https://craft.mxkaske.dev",
-          external: true,
-        },
-        {
-          title: "Taxonomy",
-          href: "https://tx.shadcn.com/",
-          external: true,
-        },
-        {
-          title: "shadcn/ui",
-          href: "https://ui.shadcn.com",
-          external: true,
-        },
+        // {
+        //   title: "OneStopShop",
+        //   href: "https://onestopshop.jackblatch.com",
+        //   external: true,
+        // },
+        // {
+        //   title: "Acme Corp",
+        //   href: "https://acme-corp.jumr.dev",
+        //   external: true,
+        // },
+        // {
+        //   title: "craft.mxkaske.dev",
+        //   href: "https://craft.mxkaske.dev",
+        //   external: true,
+        // },
+        // {
+        //   title: "Taxonomy",
+        //   href: "https://tx.shadcn.com/",
+        //   external: true,
+        // },
+        // {
+        //   title: "shadcn/ui",
+        //   href: "https://ui.shadcn.com",
+        //   external: true,
+        // },
       ],
     },
     {
-      title: "Help",
+      title: "",
       items: [
         {
           title: "About",
@@ -143,30 +143,30 @@ export const siteConfig = {
         },
       ],
     },
-    {
-      title: "Lofi",
-      items: [
-        {
-          title: "beats to study to",
-          href: "https://www.youtube.com/watch?v=jfKfPfyJRdk",
-          external: true,
-        },
-        {
-          title: "beats to chill to",
-          href: "https://www.youtube.com/watch?v=rUxyKA_-grg",
-          external: true,
-        },
-        {
-          title: "a fresh start",
-          href: "https://www.youtube.com/watch?v=rwionZbOryo",
-          external: true,
-        },
-        {
-          title: "coffee to go",
-          href: "https://www.youtube.com/watch?v=2gliGzb2_1I",
-          external: true,
-        },
-      ],
-    },
+    // {
+    //   title: "Lofi",
+    //   items: [
+    //     {
+    //       title: "beats to study to",
+    //       href: "https://www.youtube.com/watch?v=jfKfPfyJRdk",
+    //       external: true,
+    //     },
+    //     {
+    //       title: "beats to chill to",
+    //       href: "https://www.youtube.com/watch?v=rUxyKA_-grg",
+    //       external: true,
+    //     },
+    //     {
+    //       title: "a fresh start",
+    //       href: "https://www.youtube.com/watch?v=rwionZbOryo",
+    //       external: true,
+    //     },
+    //     {
+    //       title: "coffee to go",
+    //       href: "https://www.youtube.com/watch?v=2gliGzb2_1I",
+    //       external: true,
+    //     },
+    //   ],
+    // },
   ] satisfies FooterItem[],
 }

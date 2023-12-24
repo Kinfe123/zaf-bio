@@ -20,6 +20,7 @@ import { Icons } from "@/components/icons"
 import { Shell } from "@/components/shells/shell"
 import { ProductCardSkeleton } from "@/components/skeletons/product-card-skeleton"
 import { StoreCardSkeleton } from "@/components/skeletons/store-card-skeleton"
+import HeroWrapper from "@/components/hero-wrapper/hero-wrapper"
 
 export default async function IndexPage() {
   // See the unstable_cache API docs: https://nextjs.org/docs/app/api-reference/functions/unstable_cache
@@ -124,22 +125,23 @@ export default async function IndexPage() {
             <span className="sr-only">GitHub</span>
           </Link> */}
         </React.Suspense>
+
+        <HeroWrapper />
         <Balancer
           as="h1"
-          className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl bg-gradient-to-tr from-zinc-400/10 via-white/80 to-white/20 bg-clip-text text-transparent"
+          className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl bg-gradient-to-tr from-black/70 via-black to-black/60 dark:from-zinc-400/10 dark:via-white/80 dark:to-white/20 bg-clip-text text-transparent"
         >
          <span className="bg-gradient-to-tr from-zinc-400/10 via-white/80 to-white/20 bg-clip-text text-transparent">Zaf</span> - A Right Place to find your biomed gears
         </Balancer>
         <Balancer className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
-          Buy and sell skateboarding gears from independent brands and stores
-          around the world with ease
+            Explore and buy biomed gear at a speed of light and elevate your medical experience 
         </Balancer>
         <div className="flex flex-wrap items-center justify-center gap-4">
           <Link href="/products" className={cn(buttonVariants())}>
             Buy now
             <span className="sr-only">Buy now</span>
           </Link>
-          <Link
+          {/* <Link
             href="/dashboard/stores"
             className={cn(
               buttonVariants({
@@ -149,7 +151,7 @@ export default async function IndexPage() {
           >
             Sell now
             <span className="sr-only">Sell now</span>
-          </Link>
+          </Link> */}
         </div>
       </section>
       <section

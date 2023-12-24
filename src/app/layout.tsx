@@ -29,11 +29,11 @@ export const metadata: Metadata = {
   ],
   authors: [
     {
-      name: "sadmann7",
-      url: "https://www.sadmn.com",
+      name: "KinfishT",
+      url: "https://www.kinfish-owns-computer.vercel.app",
     },
   ],
-  creator: "sadmann7",
+  creator: "Kinfish",
   openGraph: {
     type: "website",
     locale: "en_US",
