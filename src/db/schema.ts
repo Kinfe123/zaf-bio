@@ -138,7 +138,7 @@ export const addresses = mysqlTable("addresses", {
   id: serial("id").primaryKey(),
   line1: varchar("line1", { length: 191 }),
   line2: varchar("line2", { length: 191 }),
-  city: varchar("city", { length: 191 }),
+city: varchar("city", { length: 191 }),
   state: varchar("state", { length: 191 }),
   postalCode: varchar("postalCode", { length: 191 }),
   country: varchar("country", { length: 191 }),

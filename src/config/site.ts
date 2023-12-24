@@ -37,7 +37,7 @@ export const siteConfig = {
         //   items: [],
         // },
         // {
-        //   title: "Blog",
+//   title: "Blog",
         //   href: "/blog",
         //   description: "Read our latest blog posts.",
         //   items: [],

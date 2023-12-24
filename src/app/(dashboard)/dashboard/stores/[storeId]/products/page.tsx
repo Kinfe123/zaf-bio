@@ -16,7 +16,7 @@ import { ProductsTableShell } from "@/components/shells/products-table-shell"
 export const metadata: Metadata = {
   metadataBase: new URL(env.NEXT_PUBLIC_APP_URL),
   title: "Products",
-  description: "Manage your products",
+  description: "Manage tx tx",
 }
 
 interface ProductsPageProps {

@@ -61,7 +61,7 @@ export function AddProductForm({ storeId }: AddProductFormProps) {
       description: "",
       price: "",
       inventory: NaN,
-      category: "skateboards",
+      category: "microscope",
       subcategory: "",
       images: [],
     },

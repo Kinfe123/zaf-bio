@@ -56,6 +56,7 @@ export function UpdateProductForm({ product }: UpdateProductFormProps) {
   const router = useRouter()
   const [files, setFiles] = React.useState<FileWithPreview[] | null>(null)
   const [isPending, startTransition] = React.useTransition()
+  const [isPending2 ,startTransition2] = React.useState(false)
 
   React.useEffect(() => {
     if (product.images && product.images.length > 0) {
@@ -85,7 +86,7 @@ export function UpdateProductForm({ product }: UpdateProductFormProps) {
   })
 
   const subcategories = getSubcategories(form.watch("category"))
-
+  
   function onSubmit(data: Inputs) {
     startTransition(async () => {
       try {
@@ -303,18 +304,20 @@ export function UpdateProductForm({ product }: UpdateProductFormProps) {
           <Button
             variant="destructive"
             onClick={() => {
+              startTransition2(true)
               startTransition(async () => {
                 void form.trigger(["name", "price", "inventory"])
                 await deleteProduct({
                   storeId: product.storeId,
                   id: product.id,
                 })
+                startTransition2(false)
                 router.push(`/dashboard/stores/${product.storeId}/products`)
               })
             }}
-            disabled={isPending}
+            disabled={isPending2}
           >
-            {isPending && (
+            {isPending2 && (
               <Icons.spinner
                 className="mr-2 h-4 w-4 animate-spin"
                 aria-hidden="true"
