@@ -160,6 +160,7 @@ export default async function IndexPage() {
         className="grid grid-cols-1 gap-4 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
       >
         {productCategories.map((category) => (
+          // @ts-ignore
           <CategoryCard key={category.title} category={category} />
         ))}
       </section>
