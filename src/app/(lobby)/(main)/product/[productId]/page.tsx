@@ -136,7 +136,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
           <div className="space-y-2">
             <h2 className="line-clamp-1 text-2xl font-bold">{product.name}</h2>
             <p className="text-base text-muted-foreground">
-              {formatPrice(product.price)}
+              {product.price} Birr
             </p>
             {store ? (
               <Link

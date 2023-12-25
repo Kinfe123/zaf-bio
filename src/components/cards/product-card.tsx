@@ -74,7 +74,7 @@ export function ProductCard({
         <CardContent className="space-y-1.5 p-4">
           <CardTitle className="line-clamp-1">{product.name}</CardTitle>
           <CardDescription className="line-clamp-1">
-            {formatPrice(product.price)}
+            {product.price} Birr
           </CardDescription>
           <Rating rating={Math.round(product.rating / 5)} />
         </CardContent>

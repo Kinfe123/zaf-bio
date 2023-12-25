@@ -204,7 +204,7 @@ export default async function IndexPage() {
             </React.Suspense>
           </div>
           <Link
-            href="/products"
+            href="/products?active=false"
             className={cn(
               buttonVariants({
                 variant: "ghost",
