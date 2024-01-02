@@ -190,7 +190,7 @@ export function FileDialog<TFieldValues extends FieldValues>({
             className="mt-2.5 w-full"
             onClick={() => setFiles(null)}
           >
-            <TrashIcon className="mr-2 h-4 w-4  " aria-hidden="true" />
+            <TrashIcon className="mr-2 h-4 w-4" aria-hidden="true" />
             Remove All
             <span className="sr-only">Remove all</span>
           </Button>
