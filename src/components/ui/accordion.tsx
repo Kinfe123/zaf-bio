@@ -1,4 +1,6 @@
+
 "use client"
+
 
 import * as React from "react"
 import * as AccordionPrimitive from "@radix-ui/react-accordion"
@@ -52,7 +54,8 @@ const AccordionContent = React.forwardRef<
     )}
     {...props}
   >
-    <div className="pb-4 pt-0">{children}</div>
+
+    <div className="pb-4 pt-0"><p dangerouslySetInnerHTML={{ __html: children ?? "" }}></p></div>
   </AccordionPrimitive.Content>
 ))
 AccordionContent.displayName = AccordionPrimitive.Content.displayName
