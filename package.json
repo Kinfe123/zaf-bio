@@ -57,6 +57,7 @@
     "@uploadthing/react": "^6.0.2",
     "ai": "^2.2.27",
     "class-variance-authority": "^0.7.0",
+    "classname": "^0.0.0",
     "clsx": "^2.0.0",
     "cmdk": "^0.2.0",
     "contentlayer": "^0.3.4",

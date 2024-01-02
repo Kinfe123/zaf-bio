@@ -107,6 +107,9 @@ dependencies:
   class-variance-authority:
     specifier: ^0.7.0
     version: 0.7.0
+  classname:
+    specifier: ^0.0.0
+    version: 0.0.0
   clsx:
     specifier: ^2.0.0
     version: 2.0.0
@@ -4920,6 +4923,10 @@ packages:
     resolution: {integrity: sha512-jFI8IQw4hczaL4ALINxqLEXQbWcNjoSkloa4IaufXCJr6QawJyw7tuRysRsrE8w2p/4gGaxKIt/hX3qz/IbD1A==}
     dependencies:
       clsx: 2.0.0
+    dev: false
+
+  /classname@0.0.0:
+    resolution: {integrity: sha512-kkhsspEJdUW+VhuvNzb2sQf0KbafDPfd36dB1qf03Uu42dWZwMQzaQuyNkaRr5ir0ZiAN0+TlH/EOOfwb/aaXg==}
     dev: false
 
   /cli-color@2.0.3:
