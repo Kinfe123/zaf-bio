@@ -92,7 +92,7 @@ export function ProductImageCarousel({
       className={cn("flex flex-col gap-2", className)}
       {...props}
     >
-      <div ref={emblaRef} className="overflow-hidden">
+      <div ref={emblaRef} className="overflow-hidden rounded-2xl">
         <div
           className="-ml-4 flex touch-pan-y"
           style={{
