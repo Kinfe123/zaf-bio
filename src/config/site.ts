@@ -14,7 +14,7 @@ const links = {
 }
 
 export const siteConfig = {
-  name: "Zaf-Pharmacy",
+  name: "Zaf pharmaceutical",
   description:
     "A place for you to buy biomedical equipents and gears at a fair and appealing cost for you .",
   url: "https://zaf-bio.vercel.app",
