@@ -40,7 +40,7 @@ export interface FooterItem {
 
 export type MainNavItem = NavItemWithOptionalChildren
 
-export type SidebarNavItem = NavItemWithChildren
+export type SidebarNavItem = NavItemWithChildren 
 
 export type UserRole = z.infer<typeof userPrivateMetadataSchema.shape.role>
 
