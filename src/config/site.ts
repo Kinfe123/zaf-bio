@@ -63,6 +63,7 @@ export const siteConfig = {
   //   })),
   ] satisfies MainNavItem[],
   
+  
   footerNav: [
     
     {
@@ -90,31 +91,31 @@ export const siteConfig = {
         },
       ],
     },
-    {
-      title: "Social",
-      items: [
-        {
-          title: "Twitter",
-          href: links.twitter,
-          external: true,
-        },
-        {
-          title: "GitHub",
-          href: links.githubAccount,
-          external: true,
-        },
-        {
-          title: "Discord",
-          href: links.discord,
-          external: true,
-        },
-        {
-          title: "cal.com",
-          href: links.calDotCom,
-          external: true,
-        },
-      ],
-    },
+    // {
+    //   title: "Social",
+    //   items: [
+    //     {
+    //       title: "Twitter",
+    //       href: links.twitter,
+    //       external: true,
+    //     },
+    //     {
+    //       title: "GitHub",
+    //       href: links.githubAccount,
+    //       external: true,
+    //     },
+    //     {
+    //       title: "Discord",
+    //       href: links.discord,
+    //       external: true,
+    //     },
+    //     {
+    //       title: "cal.com",
+    //       href: links.calDotCom,
+    //       external: true,
+    //     },
+    //   ],
+    // },
     // {
     //   title: "Lofi",
     //   items: [
