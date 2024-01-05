@@ -58,7 +58,7 @@ export async function CheckoutCard({ storeId }: CheckoutCardProps) {
           Total ({cartLineItems.reduce((acc, item) => acc + item.quantity, 0)})
         </span>
         <span>
-          {formatPrice(
+          ETB {(
             cartLineItems.reduce(
               (acc, item) => acc + Number(item.price) * item.quantity,
               0
