@@ -11,6 +11,7 @@ import("./src/env.mjs")
 const nextConfig = {
   pageExtensions: ["tsx", "mdx", "ts", "js"],
   images: {
+    domains: ["www.zafpharma.com"],
     remotePatterns: [
       {
         protocol: "https",
@@ -24,6 +25,7 @@ const nextConfig = {
         protocol: "https",
         hostname: "loremflickr.com",
       },
+     
     ],
   },
   experimental: {

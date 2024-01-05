@@ -19,7 +19,7 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { CartSheet } from "@/components/checkout/cart-sheet"
 import { Icons } from "@/components/icons"
-import { MainNav } from "@/components/layouts/main-nav"
+import { MainNav } from "./MainNav"
 import { MobileNav } from "@/components/layouts/mobile-nav"
 import { ProductsCommandMenu } from "@/components/products-command-menu"
 

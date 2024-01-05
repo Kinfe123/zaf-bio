@@ -33,6 +33,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        spotlight: 'spotlight 2s ease .75s 1 forwards',
+      },
       backgroundImage: {
         gradient:
           'linear-gradient(145.37deg, rgba(255, 255, 255, 0.09) -8.75%, rgba(255, 255, 255, 0.027) 83.95%)',
@@ -75,6 +78,16 @@ module.exports = {
         sans: ['var(--font-inter)', ...fontFamily.sans],
       },
       keyframes: {
+        spotlight: {
+          '0%': {
+            opacity: 0,
+            transform: 'translate(-72%, -62%) scale(0.5)',
+          },
+          '100%': {
+            opacity: 1,
+            transform: 'translate(-50%,-40%) scale(1)',
+          },
+        },
         shine: {
           '0%': { backgroundPosition: '-100%' },
           '100%': { backgroundPosition: '100%' },

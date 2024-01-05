@@ -107,6 +107,7 @@ export default async function IndexPage() {
 
   return (
     <Shell className="max-w-6xl pt-0 md:pt-0">
+      
       <section
         id="hero"
         aria-labelledby="hero-heading"
