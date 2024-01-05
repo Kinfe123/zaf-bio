@@ -17,7 +17,7 @@ export default async function DashboardLayout({
     redirect("/signin")
   }
   let tempDashboard = []
-  if(user.emailAddresses[0]?.emailAddress === process.env.ADMIN_EMAIL){
+  if(user.emailAddresses[0]?.emailAddress === process.env.ADMIN_EMAIL || user.emailAddresses[0]?.emailAddress === process.env.ADMIN_EAMIL_2 ){
         tempDashboard.push({
           title: "Stores",
           href: "/dashboard/stores",
