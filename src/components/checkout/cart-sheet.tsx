@@ -70,7 +70,7 @@ export async function CartSheet() {
                 </div>
                 <div className="flex">
                   <span className="flex-1">Total</span>
-                  <span>{formatPrice(cartTotal.toFixed(2))}</span>
+                  <span>ETB {(cartTotal.toFixed(2))}</span>
                 </div>
               </div>
               <SheetFooter>
