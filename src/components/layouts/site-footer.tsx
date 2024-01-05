@@ -77,7 +77,7 @@ export function SiteFooter() {
               rel="noreferrer"
               className="font-semibold transition-colors hover:text-foreground"
             >
-          KiNFiSH{" "}
+          {/* KiNFiSH{" "} */}
               <span className="sr-only">Twitter</span>
             </Link>
             .
