@@ -32,6 +32,8 @@ export async function CategoryCard({ category }: CategoryCardProps) {
     .then((res) => res[0]?.count ?? 0)
     .catch(() => 0)
 
+   
+
   return (
     <Link key={category.title} href={`/categories/${category.title}`}>
       <span className="sr-only">{category.title}</span>

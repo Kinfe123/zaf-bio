@@ -1,7 +1,7 @@
 import { type Product } from "@/db/schema"
 import type { Category, Option } from "@/types"
 import { MixIcon } from "@radix-ui/react-icons"
-
+import {Microscope , HeartPulse , TabletIcon , Stethoscope, Pill} from 'lucide-react'
 import { Icons } from "@/components/icons"
 
 export const sortOptions = [
@@ -26,7 +26,7 @@ export const productCategories = [
   {
     title: "Microscopes",
     image: "/images/skateboard-one.webp",
-    icon: Icons.logo,
+    icon: Microscope,
     subcategories: [
       {
         title: "Decks",
@@ -75,7 +75,7 @@ export const productCategories = [
   {
     title: "Anesthesia Machine",
     image: "/images/clothing-one.webp",
-    icon: Icons.shirt,
+    icon: Pill,
     subcategories: [
       {
         title: "T-shirts",
@@ -105,9 +105,9 @@ export const productCategories = [
     ],
   },
   {
-    title: "Defibilators",
+    title: "Chemistry Analyzer",
     image: "/images/shoe-one.webp",
-    icon: Icons.footprints,
+    icon: HeartPulse,
     subcategories: [
       {
         title: "Low Tops",
@@ -137,9 +137,9 @@ export const productCategories = [
     ],
   },
   {
-    title: "accessories",
+    title: "Ultra Sound",
     image: "/images/backpack-one.webp",
-    icon: MixIcon,
+    icon: Stethoscope,
     subcategories: [
       {
         title: "Skate Tools",
@@ -235,7 +235,7 @@ export const dummyProducts: Product[] = [
         url: "https://utfs.io/f/029b15c0-f634-4f13-bfd8-dc517b482959_deck-four.webp",
       },
     ],
-    category: "accessories",
+    category: "Ultra Sound",
     subcategory: "decks",
     storeId: 1,
     inventory: 50,
@@ -271,7 +271,7 @@ export const dummyProducts: Product[] = [
         url: "https://utfs.io/f/029b15c0-f634-4f13-bfd8-dc517b482959_deck-four.webp",
       },
     ],
-    category: "accessories",
+    category: "Ultra Sound",
     subcategory: "decks",
     storeId: 1,
     inventory: 50,
@@ -307,7 +307,7 @@ export const dummyProducts: Product[] = [
         url: "https://utfs.io/f/60f481bd-754a-4cc5-8988-4a17319255ef_deck-one.webp",
       },
     ],
-    category: "accessories",
+    category: "Ultra Sound",
     subcategory: "decks",
     storeId: 1,
     inventory: 50,
@@ -332,7 +332,7 @@ export const dummyProducts: Product[] = [
         url: "https://utfs.io/f/029b15c0-f634-4f13-bfd8-dc517b482959_deck-four.webp",
       },
     ],
-    category: "accessories",
+    category: "Ultra Sound",
     subcategory: "decks",
     storeId: 1,
     inventory: 50,
@@ -368,7 +368,7 @@ export const dummyProducts: Product[] = [
         url: "https://utfs.io/f/7549a840-00c1-4779-9ffa-6de287ecc082-jgyubn.webp",
       },
     ],
-    category: "accessories",
+    category: "Ultra Sound",
     subcategory: "decks",
     storeId: 1,
     inventory: 50,
@@ -404,7 +404,7 @@ export const dummyProducts: Product[] = [
         url: "https://utfs.io/f/801b4f3e-4a3d-468d-ad6c-e2d8e7da6309-7ucg83.webp",
       },
     ],
-    category: "accessories",
+    category: "Ultra Sound",
     subcategory: "decks",
     storeId: 1,
     inventory: 50,

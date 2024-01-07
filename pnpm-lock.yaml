@@ -128,6 +128,9 @@ dependencies:
   embla-carousel-react:
     specifier: 8.0.0-rc15
     version: 8.0.0-rc15(react@18.2.0)
+  lucide-react:
+    specifier: ^0.307.0
+    version: 0.307.0(react@18.2.0)
   mysql2:
     specifier: ^3.6.5
     version: 3.6.5
@@ -7656,6 +7659,14 @@ packages:
     dependencies:
       es5-ext: 0.10.62
     dev: true
+
+  /lucide-react@0.307.0(react@18.2.0):
+    resolution: {integrity: sha512-+vZ+vUiWPZTMnLHURg4aoIaz6NHOWXVVcVd8iLROu1k4LbyjcnHIKmbjXHCmulz7XAYLWRVXzhJJgIr+Aq3vOg==}
+    peerDependencies:
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /magic-string@0.25.9:
     resolution: {integrity: sha512-RmF0AsMzgt25qzqqLc1+MbHmhdx0ojF2Fvs4XnOqz2ZOBXzzkEwc/dJQZCYHAn7v1jbVOjAZfK8msRn4BxO4VQ==}

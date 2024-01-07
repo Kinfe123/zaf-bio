@@ -40,6 +40,8 @@ export const products = mysqlTable("products", {
   images: json("images").$type<StoredFile[] | null>().default(null),
   category: mysqlEnum("category", [
     "microscope",
+    "ultrasound",
+    "anstesia_machine",
     "icu",
     "accessories",
   ])

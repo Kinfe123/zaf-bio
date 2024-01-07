@@ -64,6 +64,7 @@
     "date-fns": "^2.30.0",
     "drizzle-orm": "^0.29.1",
     "embla-carousel-react": "8.0.0-rc15",
+    "lucide-react": "^0.307.0",
     "mysql2": "^3.6.5",
     "next": "14.0.4-canary.36",
     "next-contentlayer": "^0.3.4",
