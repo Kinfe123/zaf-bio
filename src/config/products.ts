@@ -24,7 +24,7 @@ export const sortOptions = [
 
 export const productCategories = [
   {
-    title: "Microscopes",
+    title: "microscope",
     image: "/images/skateboard-one.webp",
     icon: Microscope,
     subcategories: [
@@ -73,7 +73,7 @@ export const productCategories = [
     ],
   },
   {
-    title: "Anesthesia Machine",
+    title: "anesthesia machine",
     image: "/images/clothing-one.webp",
     icon: Pill,
     subcategories: [
@@ -105,7 +105,7 @@ export const productCategories = [
     ],
   },
   {
-    title: "Chemistry Analyzer",
+    title: "chemistry analyzer",
     image: "/images/shoe-one.webp",
     icon: HeartPulse,
     subcategories: [
@@ -137,7 +137,7 @@ export const productCategories = [
     ],
   },
   {
-    title: "Ultra Sound",
+    title: "ultrasound",
     image: "/images/backpack-one.webp",
     icon: Stethoscope,
     subcategories: [
