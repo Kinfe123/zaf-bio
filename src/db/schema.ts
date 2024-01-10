@@ -41,7 +41,7 @@ export const products = mysqlTable("products", {
   category: mysqlEnum("category", [
     "microscope",
     "ultrasound",
-    "anesthesia machine",
+    "anesthesia",
     "chemistry analyzer",
     "icu",
     "accessories",
