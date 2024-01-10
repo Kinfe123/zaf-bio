@@ -252,7 +252,7 @@ function FileCard({ i, file, files, setFiles }: FileCardProps) {
   }, [onCrop])
 
   return (
-    <div className="relative flex items-center justify-between gap-2.5">
+    <div className="relative flex items-center justify-between gap-10">
       <div className="flex items-center gap-2">
         <Image
           src={cropData ? cropData : file.preview}
@@ -264,7 +264,7 @@ function FileCard({ i, file, files, setFiles }: FileCardProps) {
         />
         <div className="flex flex-col">
           <p className="line-clamp-1 text-sm font-medium text-muted-foreground">
-            {file.name}
+            {file.name.slice(0 , 45)}
           </p>
           <p className="text-xs text-slate-500">
             {(file.size / 1024 / 1024).toFixed(2)}MB
