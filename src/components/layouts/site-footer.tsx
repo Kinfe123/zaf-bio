@@ -83,7 +83,7 @@ export function SiteFooter() {
             .
           </div>
           <div className="flex items-center space-x-1">
-            <Link
+            {/* <Link
               href={siteConfig.links.github}
               target="_blank"
               rel="noreferrer"
@@ -95,8 +95,8 @@ export function SiteFooter() {
               )}
             >
               <Icons.gitHub className="h-4 w-4" aria-hidden="true" />
-              {/* <span className="sr-only">GitHub</span> */}
-            </Link>
+          
+            </Link> */}
             <ModeToggle />
           </div>
         </section>
