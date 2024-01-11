@@ -113,7 +113,7 @@ export function ProductsTableShell({
         header: ({ column }) => (
           <DataTableColumnHeader column={column} title="Price" />
         ),
-        cell: ({ cell }) =>  "ETB" + (cell.getValue() as number),
+        cell: ({ cell }) =>  "ETB " + (cell.getValue() as number),
       },
       {
         accessorKey: "inventory",
