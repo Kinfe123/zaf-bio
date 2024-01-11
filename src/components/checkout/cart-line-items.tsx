@@ -75,7 +75,7 @@ export function CartLineItems({
                   {isEditable ? (
                     <span className="line-clamp-1 text-xs text-muted-foreground">
                       ETB {(item.price)} x {item.quantity} ={" "}
-                      ETB{(
+                      ETB {(
                         (Number(item.price) * Number(item.quantity)).toFixed(2)
                       )}
                     </span>
