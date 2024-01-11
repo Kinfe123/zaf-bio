@@ -76,7 +76,7 @@ export const siteConfig = {
         },
         {
           title: "Contact",
-          href: "/pages/Contact",
+          href: "/contact",
           external: false,
         },
         {
