@@ -83,20 +83,7 @@ export function SiteFooter() {
             .
           </div>
           <div className="flex items-center space-x-1">
-            {/* <Link
-              href={siteConfig.links.github}
-              target="_blank"
-              rel="noreferrer"
-              className={cn(
-                buttonVariants({
-                  size: "icon",
-                  variant: "ghost",
-                })
-              )}
-            >
-              <Icons.gitHub className="h-4 w-4" aria-hidden="true" />
-          
-            </Link> */}
+    
             <ModeToggle />
           </div>
         </section>
