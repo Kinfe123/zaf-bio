@@ -11,11 +11,35 @@ export default function Component() {
         <h2 className="text-3xl font-bold">Contact Us</h2>
         <div className="flex items-center space-x-2">
           <PhoneIcon className="h-6 w-6" />
-          <p className="text-gray-500 dark:text-gray-400"></p>
+          <p className="text-gray-500 dark:text-gray-400">(+251 11) 6 29 21 67 - General Manager</p>
+        </div>
+        <div className="flex items-center space-x-2">
+          <PhoneIcon className="h-6 w-6" />
+          <p className="text-gray-500 dark:text-gray-400">(+251 11) 6 29 23 88 - Technical Manager</p>
+        </div>
+        <div className="flex items-center space-x-2">
+          <PhoneIcon className="h-6 w-6" />
+          <p className="text-gray-500 dark:text-gray-400"> (+251 11) 6 29 19 48 - Marketing Manager</p>
+        </div>
+        <div className="flex items-center space-x-2">
+          <PhoneIcon className="h-6 w-6" />
+          <p className="text-gray-500 dark:text-gray-400">(+251 11) 6 29 23 79 - Admini & Finance Manager</p>
+        </div>
+        <div className="flex items-center space-x-2">
+          <PhoneIcon className="h-6 w-6" />
+          <p className="text-gray-500 dark:text-gray-400"> (+251 11) 6 29 26 02 - Local & Foreign procurement</p>
+        </div>
+        <div className="flex items-center space-x-2">
+          <PhoneIcon className="h-6 w-6" />
+          <p className="text-gray-500 dark:text-gray-400">(+251 11) 6 29 19 52 / 652 64 06 – Sales</p>
+        </div>
+        <div className="flex items-center space-x-2">
+          <PhoneIcon className="h-6 w-6" />
+          <p className="text-gray-500 dark:text-gray-400">(+00251 11) 6 29 24 19 Fax: (+251 11) 6 9 24 06</p>
         </div>
         <div className="flex items-center space-x-2">
           <MailIcon className="h-6 w-6" />
-          <p className="text-gray-500 dark:text-gray-400">info@acme.com</p>
+          <p className="text-gray-500 dark:text-gray-400"> zafg@zafpharma.com</p>
         </div>
         <div className="flex items-center space-x-2">
           <LocateIcon className="h-6 w-6" />
