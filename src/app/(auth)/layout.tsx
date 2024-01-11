@@ -27,7 +27,7 @@ export default function AuthLayout({ children }: React.PropsWithChildren) {
           <span>{siteConfig.name}</span>
         </Link>
         <div className="absolute bottom-6 left-8 z-20 line-clamp-1 text-base">
-          Photo by{" "}
+          {/* Photo by{" "} */}
           {/* <a
             href="https://unsplash.com/ja/@pixelperfektion?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
             className="hover:underline"
