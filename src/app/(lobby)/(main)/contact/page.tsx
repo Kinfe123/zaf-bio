@@ -1,19 +1,20 @@
 "use client"
 
 import { JSX, SVGProps, useState } from "react"
-
+import {Loader} from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 
-type ContactType = {
+export type ContactType = {
   name: string
   email: string
   subject: string
   message: string
 }
 export default function ContactUsComp() {
+  const [loading , setLoading] = useState(false)
   const [contactDetail, setContactDetail] = useState<ContactType>({
     email: "",
     message: "",
@@ -22,10 +23,16 @@ export default function ContactUsComp() {
   })
 
   const handleClick = async () => {
+    setLoading(true)
     const req = await fetch("/api/contact", {
       method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
       body: JSON.stringify(contactDetail),
     })
+  
+    setLoading(false)
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -125,7 +132,10 @@ export default function ContactUsComp() {
               placeholder="Enter your message"
             />
           </div>
-          <Button>Send message</Button>
+          <Button onClick={handleClick}><span>
+            {loading ? <Loader  className="animate-spin w-4 h-4 mr-1"/> : "" }
+            
+            </span>Send message</Button>
         </div>
       </div>
     </div>
