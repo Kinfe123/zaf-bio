@@ -5,6 +5,7 @@ import { Tabs, TabsList, TabsTrigger } from "@radix-ui/react-tabs"
 
 import { cn } from "@/lib/utils"
 import { Separator } from "@/components/ui/separator"
+import Link from "next/link"
 
 interface StoreTabsProps {
   storeId: number
@@ -65,7 +66,9 @@ export function StoreTabs({ storeId }: StoreTabsProps) {
                 tab.isActive && "text-foreground"
               )}
             >
+              <Link href={tab.isActive}>
               {tab.title}
+              </Link>
             </TabsTrigger>
           </div>
         ))}

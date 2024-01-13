@@ -73,7 +73,7 @@ export const productCategories = [
     ],
   },
   {
-    title: "anesthesia machine",
+    title: "anesthesia",
     image: "/images/clothing-one.webp",
     icon: Pill,
     subcategories: [
