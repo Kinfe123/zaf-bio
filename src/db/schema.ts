@@ -80,7 +80,7 @@ export const contact = mysqlTable("contact", {
   id: serial("id").primaryKey(),
   name: varchar("name", { length: 191 }),
   email: varchar("email", { length: 191 }),
-  subject: varchar("subject" , {length:300})
+  subject: varchar("subject" , {length:300}),
   message: varchar("message", { length: 400 }),
   
 })
