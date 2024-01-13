@@ -76,6 +76,13 @@ export const carts = mysqlTable("carts", {
   updatedAt: timestamp("updatedAt").onUpdateNow(),
 })
 
+export const contact = mysqlTable("contact", {
+  id: serial("id").primaryKey(),
+  name: varchar("name", { length: 191 }),
+  email: varchar("email", { length: 191 }),
+  message: varchar("message", { length: 400 }),
+})
+
 export type Cart = typeof carts.$inferSelect
 export type NewCart = typeof carts.$inferInsert
 
@@ -141,7 +148,7 @@ export const addresses = mysqlTable("addresses", {
   id: serial("id").primaryKey(),
   line1: varchar("line1", { length: 191 }),
   line2: varchar("line2", { length: 191 }),
-city: varchar("city", { length: 191 }),
+  city: varchar("city", { length: 191 }),
   state: varchar("state", { length: 191 }),
   postalCode: varchar("postalCode", { length: 191 }),
   country: varchar("country", { length: 191 }),
