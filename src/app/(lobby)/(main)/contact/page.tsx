@@ -1,26 +1,42 @@
-'use client'
+"use client"
 
-import { JSX, SVGProps } from "react"
+import { JSX, SVGProps, useState } from "react"
 
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
-import { useState } from "react"
-
 
 type ContactType = {
-  name: string, 
-  email: string , 
-  subject: string,
+  name: string
+  email: string
+  subject: string
   message: string
 }
 export default function ContactUsComp() {
-  const [contactDetail , setContactDetail] = useState<ContactType>({})
+  const [contactDetail, setContactDetail] = useState<ContactType>({
+    email: "",
+    message: "",
+    name: "",
+    subject: "",
+  })
+
+  const handleClick = async () => {
+    const req = await fetch("/api/contact", {
+      method: "POST",
+      body: JSON.stringify(contactDetail),
+    })
+  }
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setContactDetail({ ...contactDetail, [e.target.id]: e.target.value })
+  }
+
+
   return (
     <div>
       <div className="flex items-center justify-center">
-        <h1 className="text-5xl text-black dark:text-white md:text-6xl my-10 font-heading">
+        <h1 className="my-10 font-heading text-5xl text-black dark:text-white md:text-6xl">
           Any Questions ?
         </h1>
       </div>
@@ -90,21 +106,22 @@ export default function ContactUsComp() {
           <h2 className="text-3xl font-bold">Send us a message</h2>
           <div className="space-y-2">
             <Label htmlFor="name">Name</Label>
-            <Input id="name" placeholder="Enter your name" />
+            <Input onChange={handleChange} id="name" placeholder="Enter your name" />
           </div>
           <div className="space-y-2">
             <Label htmlFor="email">Email</Label>
-            <Input id="email" placeholder="Enter your email" type="email" />
+            <Input onChange={handleChange} id="email" placeholder="Enter your email" type="email" />
           </div>
           <div className="space-y-2">
             <Label htmlFor="subject">Subject</Label>
-            <Input id="subject" placeholder="Enter the subject" />
+            <Input onChange={handleChange} id="subject" placeholder="Enter the subject" />
           </div>
           <div className="space-y-2">
             <Label htmlFor="message">Message</Label>
             <Textarea
-              className="min-h-[100px]"
+              className="min-h-[1 00px]"
               id="message"
+              onChange={handleChange}
               placeholder="Enter your message"
             />
           </div>
