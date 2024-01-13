@@ -28,7 +28,7 @@ export async function POST(req:Request) {
     const reqs = await db
       .insert(contact).values({ email: email, name: name, message: message, subject: subject })
 
-    console.log("The result: ", reqs)
+    // console.log("The result: ", reqs)
     return new Response("You have successfully submitted your form", {
       status: 200,
     })
