@@ -12,9 +12,11 @@ import { useState } from "react"
 type ContactType = {
   name: string, 
   email: string , 
+  subject: string,
+  message: string
 }
 export default function ContactUsComp() {
-  const [contactDetail , setContactDetail] = useState({})
+  const [contactDetail , setContactDetail] = useState<ContactType>({})
   return (
     <div>
       <div className="flex items-center justify-center">
