@@ -66,7 +66,7 @@ export function StoreTabs({ storeId }: StoreTabsProps) {
                 tab.isActive && "text-foreground"
               )}
             >
-              <Link href={tab.isActive}>
+              <Link href={tab.href}>
               {tab.title}
               </Link>
             </TabsTrigger>
