@@ -13,7 +13,7 @@ export default function Component() {
           Any Questions ?
         </h1>
       </div>
-      <div className="mx-auto flex h-full max-w-7xl flex-col justify-between md:flex-row">
+      <div className="mx-auto mb-10 flex h-full max-w-7xl flex-col justify-between md:flex-row">
         <div className="w-full space-y-4 p-4 md:w-1/2">
           <h2 className="text-3xl font-bold">Contact Us</h2>
           <div className="flex items-center space-x-2">
