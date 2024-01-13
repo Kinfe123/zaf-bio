@@ -1,11 +1,20 @@
+'use client'
+
 import { JSX, SVGProps } from "react"
 
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
+import { useState } from "react"
 
-export default function Component() {
+
+type ContactType = {
+  name: string, 
+  email: string , 
+}
+export default function ContactUsComp() {
+  const [contactDetail , setContactDetail] = useState({})
   return (
     <div>
       <div className="flex items-center justify-center">
