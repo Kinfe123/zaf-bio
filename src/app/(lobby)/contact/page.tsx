@@ -3,6 +3,7 @@ import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
+import { JSX, SVGProps } from "react"
 
 export default function Component() {
   return (
@@ -70,7 +71,7 @@ export default function Component() {
   )
 }
 
-function LocateIcon(props) {
+function LocateIcon(props : JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -94,7 +95,7 @@ function LocateIcon(props) {
 }
 
 
-function MailIcon(props) {
+function MailIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -115,7 +116,7 @@ function MailIcon(props) {
 }
 
 
-function PhoneIcon(props) {
+function PhoneIcon(props : JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
